@@ -23,7 +23,7 @@ const Map = () => {
     >
       
       <Geographies
-        geography="/features.json"
+        geography="https://raw.githubusercontent.com/Marfousidev/myportfolio/gh-pages/features.json"
         fill="#434343"
         stroke="#FFFFFF"
         strokeWidth={0.5}
