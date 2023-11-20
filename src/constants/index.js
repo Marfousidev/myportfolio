@@ -39,7 +39,7 @@ import {
       title: "About",
     },
     {
-      id: "Projects",
+      id: "projects",
       title: "Projects",
     },
     {
@@ -52,18 +52,22 @@ import {
     {
       title: "Front-end Developer",
       icon: web,
+      description:" Creates websites and applications interfaces using HTML, CSS, CSS Framework(tailwindcss, bootstrap), JavaScript, react library."
     },
     {
       title: "Designer",
       icon: mobile,
+      description:"Preparing and modifying designs using Photoshop and other tools."
     },
     {
       title: "Customer service representative",
       icon: backend,
+      description:"Provided friendly, prompt, and professional assistance to customers."
     },
     {
       title: "Content Creator",
       icon: creator,
+      description:"Developing high-quality social media, marketing materiels and media buyer. "
     },
   ];
   
