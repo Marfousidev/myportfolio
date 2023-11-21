@@ -4,12 +4,9 @@ import { ComputersCanvas } from "./canvas";
 
 import { img } from "../assets";
 
-
 import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
-
-  
   return (
     <section className="relative w-full h-screen   mx-auto">
       <div
@@ -20,19 +17,34 @@ const Hero = () => {
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
         <div>
-          <div className="  ">
-            <img src={img} className="   h-[160px]  rounded-full  object-contain   " />
-          </div>
-        
-          <h4 className={`${styles.heroHeadText}  `}>
-            Hi, I'm <span className="text-[#915EFF]">Anass </span>
-          </h4>
+          <motion.div
+            className=""
+            initial={{ x: "-100vw" }}
+            animate={{ x: "0" }}
+          >
+            <img
+              src={img}
+              className="   h-[160px]  rounded-full  object-contain   "
+            />
+          </motion.div>
 
-          <p className={`${styles.heroSubText} mt-2 `}>
-            based in Chicago, <span className="text-[#915EFF]">Illinois.</span> I'm a:
+          <motion.h4
+            className={`${styles.heroHeadText} `}
+            initial={{ x: "100vw" }}
+            animate={{ x: "0" }}
+          >
+            Hi, I'm <span className="text-[#915EFF]">Anass </span>
+          </motion.h4>
+
+          <motion.p
+            className={`${styles.heroSubText} mt-2 `}
+            initial={{ x: "100vw" }}
+            animate={{ x: "0" }}
+          >
+            based in Chicago, <span className="text-[#915EFF]">Illinois.</span>{" "}
+            I'm a:
             <br />
             <br />
-         
             <div className=" mt-5 ml-12 w-full font-light italic text-lg text-secondary">
               <TypeAnimation
                 sequence={[
@@ -49,16 +61,12 @@ const Hero = () => {
                 repeat={2}
               />
             </div>
-          </p>
+          </motion.p>
         </div>
       </div>
-   
-     
-      <div>
-        
-      </div>
-      <ComputersCanvas />
+
       
+      <ComputersCanvas />
 
       <div className="absolute xs:bottom-12 bottom-9 w-full flex justify-center items-center ">
         <a href="#about">
